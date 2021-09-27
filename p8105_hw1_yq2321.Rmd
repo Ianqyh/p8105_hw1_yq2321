@@ -22,6 +22,6 @@ df = tibble(
 df
 ```
 
-
+The code chunk below finds the mean of each variable in the data frame.
 
 
