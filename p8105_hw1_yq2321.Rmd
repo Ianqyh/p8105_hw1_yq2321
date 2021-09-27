@@ -54,3 +54,6 @@ as.numeric(pull(df, vec_char))
 ## Convert factor variable into numeric
 as.numeric(pull(df, vec_factor))
 ```
+
+We succeeded when trying to convert logical and factor variables into numeric, but we failed when trying to convert character variable into numeric. This suggests that function as.numeric() may not be applicable to character variables. It helps explain what happened when trying to take the mean of each variable as function mean() is only applicable to numeric or logical variables.
+
