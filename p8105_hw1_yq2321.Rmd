@@ -72,3 +72,18 @@ The size of the dataset is `r nrow(penguins)` x `r ncol(penguins)`.
 
 The mean flipper length is `r mean(pull(penguins,flipper_length_mm))`.
 
+
+The code chuk below makes a scatterplot of flipper length and bill length and saves it.
+
+```{r}
+x = pull(penguins, flipper_length_mm)
+y = pull(penguins, bill_depth_mm)
+plot_df = tibble(x,y)
+
+## A colored scatterplot of flipper length (x) and bill depth (y).
+ggplot(plot_df, aes(x = x, y = y, color = pull(penguins,species))) + geom_point()
+
+## Save the scatterplot
+ggsave("scatterplot.pdf")
+```
+
