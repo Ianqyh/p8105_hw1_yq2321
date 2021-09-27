@@ -42,3 +42,6 @@ mean_vec_factor = mean(pull(df, vec_factor))
 mean_vec_factor
 ```
 
+The code chunk below tries to convert variables from one type to another.
+
+
