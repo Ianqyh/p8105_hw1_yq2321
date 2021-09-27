@@ -24,4 +24,21 @@ df
 
 The code chunk below finds the mean of each variable in the data frame.
 
+```{r}
+## Takes the mean of the random sample and it works
+mean_vec_norm = mean(pull(df,vec_norm))
+mean_vec_norm
+
+## Takes the mean of the logical vector and it works
+mean_vec_logical = mean(pull(df, vec_logical))
+mean_vec_logical
+
+## Takes the mean of the character vector and it doesn't work
+mean_vec_char = mean(pull(df, vec_char))
+mean_vec_char
+
+## Takes the mean of the vector factor and it doesn't work
+mean_vec_factor = mean(pull(df, vec_factor))
+mean_vec_factor
+```
 
