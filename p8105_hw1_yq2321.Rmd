@@ -44,4 +44,13 @@ mean_vec_factor
 
 The code chunk below tries to convert variables from one type to another.
 
+```{r, eval = FALSE}
+## Convert logical variable into numeric
+as.numeric(pull(df, vec_logical))
 
+## Convert character variable into numeric
+as.numeric(pull(df, vec_char))
+
+## Convert factor variable into numeric
+as.numeric(pull(df, vec_factor))
+```
