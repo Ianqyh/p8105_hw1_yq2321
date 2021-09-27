@@ -66,5 +66,9 @@ The code chunk below loads the 'penguins' dataset.
 data("penguins", package = "palmerpenguins")
 ```
 
+The names of important variables are `r names(penguins)`.
 
+The size of the dataset is `r nrow(penguins)` x `r ncol(penguins)`.
+
+The mean flipper length is `r mean(pull(penguins,flipper_length_mm))`.
 
